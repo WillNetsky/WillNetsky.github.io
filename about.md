@@ -2,14 +2,16 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+
+I'm a data scientist working in the San Francisco Bay Area. 
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I also enjoy robotics and brewing beer.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[willnetsky@gmail.com](mailto:willnetsky@gmail.com)
