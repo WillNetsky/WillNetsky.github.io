@@ -26,6 +26,7 @@ document. I applied tf-idf to each of these reviews to account for the fact that
 malt or hops. Then, I applied latent semantic analysis to reduce my feature space to ~500 dimensions. Taking this dataset,
 I applied cosine similarity between each of the documents to find the beer with a set of reviews that has the most similar
 language. 
+![Data Flow](/images/beer_recommender.png)
 
 This first iteration is already producing very good results. If I search for a beer like Lost Abbey's Track #8 (a bourbon barrel
 aged Belgian quadrupel with cinnamon sticks and dried chilis) you get the following results:
