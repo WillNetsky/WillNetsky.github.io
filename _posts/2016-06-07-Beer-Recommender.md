@@ -46,6 +46,7 @@ other recommendation services, yet these beers are all very similar.
 
 Let's try a beer from a fairly broad style, like American sours. I'll take one of my personal favorites, Sante Adairius' West Ashley
 (a sour saison aged in Pinot Noir barrels with apricots):
+
 Beer | Description
 --- | ---
 Cascade Apricot Ale | Another apricot sour
@@ -63,6 +64,7 @@ cannabis, a recreational drug used by recidivists and jazz musicians). So will t
 these two fairly distinct styles?
 
 Let's try Sixpoint's Resin IPA, which, as you may be able to tell, falls into the pine category:
+
 Beer | Marijuana Euphemism Used in a Review
 --- | ---
 Deviant Dale's IPA | Herbal, green
