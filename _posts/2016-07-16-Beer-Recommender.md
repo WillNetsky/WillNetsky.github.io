@@ -7,7 +7,7 @@ title: Creating a Beer Recommendation Engine
 
 Beer is one of my passions. I'm an award-winning homebrewer. I've judged beer competitions. I'm an active member in my
 local homebrewing clubs. I've reviewed just under 1000 unique beers on Untappd. I have several floorplan ideas for the taproom
-of the craft brewery I will definitely someday own.
+of the craft brewery I will definitely someday own.  
 I'm drinking a beer while I'm writing this post.
 
 So clearly, when I was tasked to follow my passion for my final project at at Metis, 
