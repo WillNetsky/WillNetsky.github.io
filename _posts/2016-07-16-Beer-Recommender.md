@@ -3,7 +3,7 @@ layout: post
 title: Creating a Beer Recommendation Engine
 ---
 
-**Update: this project is now live at [ChooseABeerFor.me](www.chooseabeerfor.me)**
+**Update: this project is now live at [ChooseABeerFor.me](http://chooseabeerfor.me)**
 
 Beer is one of my passions. I'm an award-winning homebrewer. I've judged beer competitions. I'm an active member in my
 local homebrewing clubs. I've reviewed just under 1000 unique beers on Untappd. I have several floorplan ideas for the taproom
@@ -28,7 +28,7 @@ Even though I fancy myself as a fairly objective reviewer, I'm just as susceptib
 
 To combat these flaws in previous systems, I decided to use natural language processing of beer reviews to find similarity of language used to describe beers. I figured using the words that people use to describe beer would give better results than arbitrary scores or styles.
 
-The recommender, which can be found at [ChooseABeerFor.me](www.chooseabeerfor.me), currently uses 700,000 reviews from 20,000 beers. I applied tf-idf to each of these reviews to upweight words used for particular beers and to downweight words used for many beers. This accounts for the fact that almost every beer review mentions things like malt or hops, but few mention more descriptive words like citrus or tart. Then, I applied latent semantic analysis to reduce my feature space to 500 dimensions. Taking this dataset,
+The recommender, which can be found at [ChooseABeerFor.me](http://chooseabeerfor.me), currently uses 700,000 reviews from 20,000 beers. I applied tf-idf to each of these reviews to upweight words used for particular beers and to downweight words used for many beers. This accounts for the fact that almost every beer review mentions things like malt or hops, but few mention more descriptive words like citrus or tart. Then, I applied latent semantic analysis to reduce my feature space to 500 dimensions. Taking this dataset,
 I applied cosine similarity between each of the documents to find the five beers with reviews that have the most similar language. This was all put into a Flask app that is currently hosted on AWS. 
 
 ![Data Flow](/images/beer_recommender.png)
@@ -90,4 +90,4 @@ These five beers are good examples of the other side of IPAs, drier beers with m
 
 Though my model does produce consistently good results, it is not without its flaws. It still recommends beers that you may not be able to obtain without some difficulty. To fix this, in a future update, I will integrate Untappd's API to filter for beers that have been checked in near your location. I'd also like to integrate this model with BeerMenus or TapHunter to choose a beer available at a particular establishment that is similar to something you know you like. 
 
-Be sure to check it out at [ChooseABeerFor.me](www.chooseabeerfor.me) and let me know what you think!
+Be sure to check it out at [ChooseABeerFor.me](http://chooseabeerfor.me) and let me know what you think!
