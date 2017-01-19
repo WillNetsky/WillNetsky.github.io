@@ -3,8 +3,6 @@ layout: post
 title: Creating a Beer Recommendation Engine
 ---
 
-**Update: this project is now live at [ChooseABeerFor.me](http://chooseabeerfor.me)**
-
 Beer is one of my passions. I'm an award-winning homebrewer. I've judged beer competitions. I'm an active member in my
 local homebrewing clubs. I've reviewed just under 1000 unique beers on Untappd. I have several floorplan ideas for the taproom
 of the craft brewery I will definitely someday own.  
