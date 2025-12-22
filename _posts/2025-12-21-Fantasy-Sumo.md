@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Moneyball for Sumo: Predicting Tournament Winners with Python
+title: Moneyball for Sumo - Predicting Tournament Winners with Python
 ---
 
 Fantasy sports have always been a game of statistics and gut feelings. But what if you could bring some serious data science to the dohyo? This project is an attempt to do just that: build a machine learning pipeline to predict the performance of sumo wrestlers in a fantasy league.
