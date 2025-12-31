@@ -1,13 +1,39 @@
 ---
 layout: post
-title: Moneyball for Sumo: Predicting Tournament Winners with Python
+title: Fantasy Sumo Predictions
 ---
 
-Fantasy sports have always been a game of statistics and gut feelings. But what if you could bring some serious data science to the dohyo? This project is an attempt to do just that: build a machine learning pipeline to predict the performance of sumo wrestlers in a fantasy league.
+I started watching sumo in 2020. It's been great, it's a fun thing to have on in the background. I've gotten to see the end of the GOAT Hakuho's career, Terunofuji's Yokozuna run, and now the rise of new guys. Other than being drawn to the sound of meat slapping for eight hours straight for two weeks every two months, I also enjoy the different structures of sumo. All of the separate divisions and the East/West standings make it particularly interesting from a data analysis perspective.
 
-The goal is to go beyond simple win/loss records and create a sophisticated tool that gives a real edge in picking a winning fantasy stable.
+Of course, as the title suggests, I've gotten into fantasy sumo.
 
-## The Data: More Than Just Big Guys Pushing
+## The League Format 
+
+> You'll have 5 wrestlers on your team, each from a different rank set:
+> 
+> 1 from the yokozuna/ozeki ranks
+> 1 from the sekiwake/komusubi ranks
+> 1 from maegashira 1-5
+> 1 from maegashira 6-10
+> 1 from maegashira 11+
+> 
+> Multiple people can have the same wrestler, but there are limits to keep it interesting. Therefore, when submitting your picks, choose 3 guys from each set.
+> 
+> Points will be granted in the following ways:
+> 
+> 1 pt. for each win
+> 5 pts. for the championship or yusho
+> 3 pts for the runner-up, or jun-yusho
+> 3 pts for a special prize, or sansho
+> 2 pts for a gold star victory, or kinboshi
+> 1 pt. for a winning record, or kachi-koshi
+> -.5 pt. for a losing record, or make-koshi
+> -.5 pt. for your second trade
+> -1 pt. for every trade beyond the first 2
+
+So a relatively simple format. We pick three wrestlers from each of the tiers and they get a score based on how well they do. I haven't really done much trading once the league began automatically trading wrestlers who got hurt, so we'll ignore that for now in this project. Though, it could be an interesting thing to track during the tournaments and would give me a reason to create a live dashboard. But we'll save that for another time.
+
+## The Data
 
 Our predictions are built on a rich dataset scraped from the incredible [SumoDB](https://sumodb.sumogames.de/). The data comes in two main forms:
 
@@ -53,10 +79,6 @@ No single machine learning model is perfect. To get the best results, we use an 
 
 The final output is a dynamic HTML report that serves as the ultimate fantasy sumo cheat sheet.
 
-It includes:
-*   **Sortable Columns:** Click any header to sort the data.
-*   **Division Filters:** Instantly switch between viewing all wrestlers, just the top Makuuchi division, or just the Juryo division.
-*   **Color-Coded Groups:** Wrestlers are highlighted by their fantasy draft group (e.g., Yokozuna/Ozeki, Maegashira 1-5) for quick scanning.
-*   **Detailed Fantasy Points:** Instead of just a final score, the report breaks down the prediction into its components: points from wins, kachi-koshi, kinboshi, and even the *probability-adjusted* points for winning the championship (Yusho).
+[Here are the predictions for the upcoming January 2026 tournament]
 
 By combining deep domain knowledge with modern machine learning techniques, this project transforms raw sumo data into a powerful and insightful prediction engine.
