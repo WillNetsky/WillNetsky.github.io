@@ -12,10 +12,15 @@ Of course, as the title suggests, I've gotten into fantasy sumo.
 > You'll have 5 wrestlers on your team, each from a different rank set:
 > 
 > 1 from the yokozuna/ozeki ranks
+> 
 > 1 from the sekiwake/komusubi ranks
+> 
 > 1 from maegashira 1-5
+> 
 > 1 from maegashira 6-10
+> 
 > 1 from maegashira 11+
+> 
 > 
 > Multiple people can have the same wrestler, but there are limits to keep it interesting. Therefore, when submitting your picks, choose 3 guys from each set.
 > 
