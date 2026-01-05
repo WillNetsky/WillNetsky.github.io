@@ -27,14 +27,23 @@ Of course, as the title suggests, I've gotten into fantasy sumo.
 > Points will be granted in the following ways:
 > 
 > 1 pt. for each win
+> 
 > 5 pts. for the championship or yusho
+> 
 > 3 pts for the runner-up, or jun-yusho
+> 
 > 3 pts for a special prize, or sansho
+> 
 > 2 pts for a gold star victory, or kinboshi
+> 
 > 1 pt. for a winning record, or kachi-koshi
+> 
 > -.5 pt. for a losing record, or make-koshi
+> 
 > -.5 pt. for your second trade
+> 
 > -1 pt. for every trade beyond the first 2
+> 
 
 So a relatively simple format. We pick three wrestlers from each of the tiers and they get a score based on how well they do. I haven't really done much trading once the league began automatically trading wrestlers who got hurt, so we'll ignore that for now in this project. Though, it could be an interesting thing to track during the tournaments and would give me a reason to create a live dashboard. But we'll save that for another time.
 
