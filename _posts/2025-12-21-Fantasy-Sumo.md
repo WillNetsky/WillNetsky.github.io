@@ -89,6 +89,6 @@ Now sure 0.12 R-squared isn't great, but I think the MAE of 2.0084 wins is defin
 
 The final output is a dynamic HTML report that serves as the ultimate fantasy sumo cheat sheet.
 
-[Here are the predictions for the upcoming January 2026 tournament](prediction_report_202601.html)
+[Here are the predictions for the upcoming January 2026 tournament](% link prediction_report_202601.html)
 
 By combining deep domain knowledge with modern machine learning techniques, this project transforms raw sumo data into a powerful and insightful prediction engine for a particular fantasy sumo league.
