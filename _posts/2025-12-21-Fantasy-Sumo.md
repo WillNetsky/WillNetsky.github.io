@@ -35,22 +35,23 @@ So a relatively simple format. We pick three wrestlers from each of the tiers an
 
 ## The Data
 
-Our predictions are built on a rich dataset scraped from the incredible [SumoDB](https://sumodb.sumogames.de/). The data comes in two main forms:
+Our predictions are built on a rich dataset scraped from the incredible [SumoDB](https://sumodb.sumogames.de/). SumoDB has data all the way back to the [October 1757 tournament](https://sumodb.sumogames.de/Banzuke.aspx?b=175710) which is absolutely incredible. Now, understandably, this data is not as complete as the modern data, and simply features the Makuuchi and Juryo banzukes. By 1761, SumoDB has final results, and by 1909 it has daily results and matchups. Then by 1927, kimarites (winning techniques) are starting to be added for the top divisions. The most complete data begins in the July 1991 tournament, with 2747 kimarites and bouts recorded. 
+
+The data comes in two main forms:
 
 1.  **Banzuke Data:** This is the official ranking sheet for each tournament. It gives us a wrestler's rank, stable, age, height, and weight. This is our foundational data.
 2.  **Match History Data:** This is a detailed, day-by-day log of every match, including the winner, loser, and the *kimarite* (winning technique).
 
 Combining these two sources allows us to build a deep understanding of each wrestler.
 
-## The Secret Sauce: Feature Engineering
+## Feature Engineering
 
-A machine learning model is only as good as the data it's fed. Raw stats aren't enough. The real magic is in **feature engineering**—creating new, insightful features that capture the nuances of a wrestler's career and abilities.
+Having this rich dataset from SumoDB is great, but in order to properly build a model we need feature engineering.
 
 Here are some of the key features that power the model:
 
-#### 1. Beyond Basic Rank
-Rank is everything in sumo, but we treat it with sophistication. Instead of just a number, we calculate:
-*   **`absolute_rank_score`**: A single "power score" that represents a wrestler's standing across all six divisions.
+#### 1. Rank Based Features
+*   **`absolute_rank_score`**: Absolute rank in the entire sumo structure
 *   **`rank_gap`**: The difference between a wrestler's current rank and their career-best rank. This tells us if they're at their peak, in a slump, or on the rise.
 
 #### 2. Momentum is Key
@@ -63,7 +64,7 @@ No wrestler competes in a vacuum.
 *   **`heya_strength`**: We measure the average rank of a wrestler's stablemates. A stronger stable means better training partners.
 *   **`division_strength`**: We also measure the average rank of their opponents in the division. This tells the model how tough the competition is for that specific tournament.
 
-#### 4. The "Moneyball" Stats
+#### 4. The Kimarite Features
 This is where we get into advanced analytics by using the detailed match history.
 *   **`oshi_ratio`**: The ratio of a wrestler's wins by "pushing/thrusting" vs. "grappling/belt" techniques. This creates a "fighter style" profile. Is he a pusher or a grappler?
 *   **`avg_h2h_win_pct`**: The most powerful feature of all. For each wrestler, we calculate their historical head-to-head win percentage against every other opponent they will face in the upcoming tournament.
@@ -77,8 +78,17 @@ No single machine learning model is perfect. To get the best results, we use an 
 
 ## The Payoff: An Interactive Prediction Report
 
+```
+--- Stacking Model Performance ---
+  R-squared (R²): 0.1219
+  Mean Absolute Error (MAE): 2.0084 wins
+-----------------------------------
+```
+
+Now sure 0.12 R-squared isn't great, but I think the MAE of 2.0084 wins is definitely usable in this context. If we take these win predictions and use them to find the other fantasy sumo stats like kachi-koshis and kinboshis through probability, we should have a workable cheat seet to draft from.
+
 The final output is a dynamic HTML report that serves as the ultimate fantasy sumo cheat sheet.
 
-[Here are the predictions for the upcoming January 2026 tournament]
+[Here are the predictions for the upcoming January 2026 tournament](prediction_report_202601.html)
 
-By combining deep domain knowledge with modern machine learning techniques, this project transforms raw sumo data into a powerful and insightful prediction engine.
+By combining deep domain knowledge with modern machine learning techniques, this project transforms raw sumo data into a powerful and insightful prediction engine for a particular fantasy sumo league.
