@@ -94,34 +94,35 @@ No single machine learning model is perfect. To get the best results, we use an 
 
 ```
 --- Stacking Model Performance ---
-  R-squared (R²): 0.1219
-  Mean Absolute Error (MAE): 2.0084 wins
+  R-squared (R²): 0.1236
+  Mean Absolute Error (MAE): 2.0059 wins
 -----------------------------------
 ```
 
-Now sure 0.12 R-squared isn't great, but I think the MAE of 2.0084 wins is definitely usable in this context. If we take these win predictions and use them to find the other fantasy sumo stats like kachi-koshis and kinboshis through probability, we should have a workable cheat seet to draft from.
+Now sure 0.12 R-squared isn't great, but I think the MAE of ~2 wins is definitely usable in this context. If we take these win predictions and use them to find the other fantasy sumo stats like kachi-koshis and kinboshis through probability, we should have a workable cheat seet to draft from.
 
 Here are how the various features perform in their current state:
 ```
 --- Feature Importance (from Final Model) ---
                     Feature  Importance
-6                       age    0.096319
-17          avg_h2h_win_pct    0.092791
-10          win_consistency    0.089473
-16  avg_opponent_oshi_ratio    0.084575
-14        division_strength    0.079678
-1          rank_in_division    0.076518
-7                       bmi    0.074833
-8             heya_strength    0.070357
-15               oshi_ratio    0.069409
-11                 rank_gap    0.062194
-3     prev_rank_in_division    0.061404
-4                    prev_w    0.040234
-5                    prev_l    0.039497
-13       kachi_koshi_streak    0.030123
-12     was_kyujo_last_basho    0.022487
-2     prev_division_numeric    0.007162
-0          division_numeric    0.002949
+17          avg_h2h_win_pct    0.092929
+6                       age    0.092192
+10          win_consistency    0.088770
+16  avg_opponent_oshi_ratio    0.086453
+14        division_strength    0.077871
+7                       bmi    0.077713
+1          rank_in_division    0.073764
+8             heya_strength    0.073553
+15               oshi_ratio    0.070605
+11                 rank_gap    0.061180
+3     prev_rank_in_division    0.060865
+4                    prev_w    0.038962
+5                    prev_l    0.037961
+13       kachi_koshi_streak    0.026747
+12     was_kyujo_last_basho    0.023008
+9       Has_university_sumo    0.008108
+2     prev_division_numeric    0.007003
+0          division_numeric    0.002317
 ```
 
 
