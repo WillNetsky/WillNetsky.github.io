@@ -129,6 +129,6 @@ Here are how the various features perform in their current state:
 The final output is a dynamic HTML report that serves as the ultimate fantasy sumo cheat sheet.
 
 Here are the predictions for the upcoming January 2026 tournament:
-![Predictions](/images/2026-01-sumo-redictions.png)
+![Predictions](/images/2026-01-sumo-predictions.png)
 
 By combining deep domain knowledge with modern machine learning techniques, this project transforms raw sumo data into a powerful and insightful prediction engine for a particular fantasy sumo league.
